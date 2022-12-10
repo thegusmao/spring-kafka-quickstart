@@ -7,8 +7,6 @@ RUN mvn clean package
 FROM registry.access.redhat.com/ubi8/openjdk-11:1.10
 #FROM registry.access.redhat.com/ubi8/openjdk-8:1.3
 
-RUN ls -laR
-RUN ls -laR /home/jboss
-COPY --from=builder target/kafka-backend-0.0.1-SNAPSHOT.jar /home/jboss/app.jar
+COPY --from=builder /home/jboss/kafka-backend-0.0.1-SNAPSHOT.jar /home/jboss/app.jar
 
 CMD ["java", "-jar", "/home/jboss/app.jar"]
