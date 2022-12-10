@@ -1,8 +1,6 @@
-# kafka-spring-sample repository
+# AMQ Streams Spring Boot Quickstart
 
 ## Description
-
-
 
 Repository dedicated to the Todo List backend application. This application is written using Spring Boot, following DDD and TDD principles.
 
