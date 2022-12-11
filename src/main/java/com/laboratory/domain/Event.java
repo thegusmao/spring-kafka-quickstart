@@ -2,8 +2,6 @@ package com.laboratory.domain;
 
 import java.util.Date;
 
-import org.springframework.boot.json.JsonParserFactory;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
